@@ -101,7 +101,7 @@ var _MrMJ06$Elm_Test$Main$pageHome = function (model) {
 											{ctor: '[]'},
 											{
 												ctor: '::',
-												_0: _elm_lang$html$Html$text('Click the start button.'),
+												_0: _elm_lang$html$Html$text('Click the login button.'),
 												_1: {ctor: '[]'}
 											}),
 										_1: {
@@ -125,7 +125,7 @@ var _MrMJ06$Elm_Test$Main$pageHome = function (model) {
 													},
 													{
 														ctor: '::',
-														_0: _elm_lang$html$Html$text('Start'),
+														_0: _elm_lang$html$Html$text('Login'),
 														_1: {ctor: '[]'}
 													})),
 											_1: {ctor: '[]'}
@@ -136,7 +136,7 @@ var _MrMJ06$Elm_Test$Main$pageHome = function (model) {
 										{ctor: '[]'},
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html$text('Button example'),
+											_0: _elm_lang$html$Html$text('Login'),
 											_1: {ctor: '[]'}
 										},
 										_rundis$elm_bootstrap$Bootstrap_Card$config(
@@ -311,7 +311,7 @@ var _MrMJ06$Elm_Test$Main$pageGettingStarted = function (model) {
 			{ctor: '[]'},
 			{
 				ctor: '::',
-				_0: _elm_lang$html$Html$text('Test button'),
+				_0: _elm_lang$html$Html$text('Login'),
 				_1: {ctor: '[]'}
 			}),
 		_1: {
@@ -342,7 +342,7 @@ var _MrMJ06$Elm_Test$Main$pageGettingStarted = function (model) {
 				},
 				{
 					ctor: '::',
-					_0: _elm_lang$html$Html$text('Click me'),
+					_0: _elm_lang$html$Html$text('Login'),
 					_1: {ctor: '[]'}
 				}),
 			_1: {ctor: '[]'}
@@ -387,7 +387,7 @@ var _MrMJ06$Elm_Test$Main$modal = function (model) {
 								{ctor: '[]'},
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('@'),
+									_0: _elm_lang$html$Html$text(''),
 									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
@@ -409,7 +409,7 @@ var _MrMJ06$Elm_Test$Main$modal = function (model) {
 						ctor: '::',
 						_0: _rundis$elm_bootstrap$Bootstrap_Form_InputGroup$view(
 							A2(
-								_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$successors,
+								_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$predecessors,
 								{
 									ctor: '::',
 									_0: A2(
@@ -417,32 +417,18 @@ var _MrMJ06$Elm_Test$Main$modal = function (model) {
 										{ctor: '[]'},
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html$text('.00'),
+											_0: _elm_lang$html$Html$text('*'),
 											_1: {ctor: '[]'}
 										}),
 									_1: {ctor: '[]'}
 								},
-								A2(
-									_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$predecessors,
-									{
-										ctor: '::',
-										_0: A2(
-											_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$span,
-											{ctor: '[]'},
-											{
-												ctor: '::',
-												_0: _elm_lang$html$Html$text('$'),
-												_1: {ctor: '[]'}
-											}),
-										_1: {ctor: '[]'}
-									},
-									_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$config(
-										_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$text(
-											{
-												ctor: '::',
-												_0: _rundis$elm_bootstrap$Bootstrap_Form_Input$placeholder('amount'),
-												_1: {ctor: '[]'}
-											}))))),
+								_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$config(
+									_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$text(
+										{
+											ctor: '::',
+											_0: _rundis$elm_bootstrap$Bootstrap_Form_Input$placeholder('password'),
+											_1: {ctor: '[]'}
+										})))),
 						_1: {
 							ctor: '::',
 							_0: A2(
@@ -461,30 +447,26 @@ var _MrMJ06$Elm_Test$Main$modal = function (model) {
 												{ctor: '[]'},
 												{
 													ctor: '::',
-													_0: _elm_lang$html$Html$text('$'),
+													_0: _elm_lang$html$Html$text('*'),
 													_1: {ctor: '[]'}
 												}),
-											_1: {
-												ctor: '::',
-												_0: A2(
-													_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$span,
-													{ctor: '[]'},
-													{
-														ctor: '::',
-														_0: _elm_lang$html$Html$text('.00'),
-														_1: {ctor: '[]'}
-													}),
-												_1: {ctor: '[]'}
-											}
+											_1: {ctor: '[]'}
 										},
 										_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$config(
 											_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$text(
 												{
 													ctor: '::',
-													_0: _rundis$elm_bootstrap$Bootstrap_Form_Input$placeholder('amount'),
+													_0: _rundis$elm_bootstrap$Bootstrap_Form_Input$placeholder('confirmPassword'),
 													_1: {ctor: '[]'}
 												})))),
-								_1: {ctor: '[]'}
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$br,
+										{ctor: '[]'},
+										{ctor: '[]'}),
+									_1: {ctor: '[]'}
+								}
 							}
 						}
 					}
@@ -495,7 +477,7 @@ var _MrMJ06$Elm_Test$Main$modal = function (model) {
 				{ctor: '[]'},
 				{
 					ctor: '::',
-					_0: _elm_lang$html$Html$text('Test view'),
+					_0: _elm_lang$html$Html$text('Login'),
 					_1: {ctor: '[]'}
 				},
 				_rundis$elm_bootstrap$Bootstrap_Modal$small(

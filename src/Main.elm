@@ -157,13 +157,13 @@ pageHome model =
     , Grid.row []
         [ Grid.col []
             [ Card.config [ Card.outlinePrimary ]
-                |> Card.headerH4 [] [ text "Button example" ]
+                |> Card.headerH4 [] [ text "Login" ]
                 |> Card.block []
-                    [ Block.text [] [ text "Click the start button." ]
+                    [ Block.text [] [ text "Click the login button." ]
                     , Block.custom <|
                         Button.linkButton
                             [ Button.primary, Button.attrs [ href "#buttonPage" ] ]
-                            [ text "Start" ]
+                            [ text "Login" ]
                     ]
                 |> Card.view
             ]
@@ -185,14 +185,14 @@ pageHome model =
 
 pageGettingStarted : Model -> List (Html Msg)
 pageGettingStarted model =
-    [ h2 [] [ text "Test button" ]
+    [ h2 [] [ text "Login" ]
     , Button.button
         [ Button.success
         , Button.large
         , Button.block
         , Button.attrs [ onClick ShowModal ]
         ]
-        [ text "Click me" ]
+        [ text "Login" ]
     ]
 
 
@@ -226,28 +226,26 @@ modal : Model -> Html Msg
 modal model =
     Modal.config CloseModal
         |> Modal.small
-        |> Modal.h4 [] [ text "Test view" ]
+        |> Modal.h4 [] [ text "Login" ]
         |> Modal.body []
             [ InputGroup.config
             (InputGroup.text [ Input.placeholder "username"])
             |> InputGroup.predecessors
-                [ InputGroup.span [] [ text "@"] ]
+                [ InputGroup.span [] [ text ""] ]
             |> InputGroup.view
                 , br [] []
                 , InputGroup.config
-                    (InputGroup.text [ Input.placeholder "amount"])
+                    (InputGroup.text [ Input.placeholder "password"])
                     |> InputGroup.predecessors
-                        [ InputGroup.span [] [ text "$"] ]
-                    |> InputGroup.successors
-                        [ InputGroup.span [] [ text ".00"] ]
+                    [ InputGroup.span [] [ text "*"] ]
                     |> InputGroup.view
                 , br [] []
                 , InputGroup.config
-                    (InputGroup.text [ Input.placeholder "amount"])
+                    (InputGroup.text [ Input.placeholder "confirmPassword"])
                     |> InputGroup.predecessors
-                        [ InputGroup.span [] [ text "$"]
-                        , InputGroup.span [] [ text ".00"]
-                        ]
+                        [ InputGroup.span [] [ text "*"] ]
                     |> InputGroup.view
+                , br [] []
                 ]
+             
         |> Modal.view model.modalVisibility
