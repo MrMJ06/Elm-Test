@@ -128,7 +128,7 @@ menu model =
         |> Navbar.container
         |> Navbar.brand [ href "#" ] [ text "Main view" ]
         |> Navbar.items
-            [ Navbar.itemLink [ href "#buttonPage" ] [ text "Button page" ]
+            [ Navbar.itemLink [ href "#buttonPage" ] [ text "Login" ]
             , Navbar.itemLink [ href "#list" ] [ text "List" ]
             ]
         |> Navbar.view model.navState
