@@ -1,46 +1,621 @@
+var _MrMJ06$Elm_Test$Main$number = 0;
+var _MrMJ06$Elm_Test$Main$pageNotFound = {
+	ctor: '::',
+	_0: A2(
+		_elm_lang$html$Html$h1,
+		{ctor: '[]'},
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html$text('Not found'),
+			_1: {ctor: '[]'}
+		}),
+	_1: {
+		ctor: '::',
+		_0: _elm_lang$html$Html$text('Sorry couldn\'t find that page'),
+		_1: {ctor: '[]'}
+	}
+};
+var _MrMJ06$Elm_Test$Main$pageModules = function (model) {
+	return {
+		ctor: '::',
+		_0: A2(
+			_elm_lang$html$Html$h1,
+			{ctor: '[]'},
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html$text('List test'),
+				_1: {ctor: '[]'}
+			}),
+		_1: {
+			ctor: '::',
+			_0: _rundis$elm_bootstrap$Bootstrap_ListGroup$ul(
+				{
+					ctor: '::',
+					_0: A2(
+						_rundis$elm_bootstrap$Bootstrap_ListGroup$li,
+						{ctor: '[]'},
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html$text('Elm 1'),
+							_1: {ctor: '[]'}
+						}),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_rundis$elm_bootstrap$Bootstrap_ListGroup$li,
+							{ctor: '[]'},
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html$text('Elm 2'),
+								_1: {ctor: '[]'}
+							}),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_rundis$elm_bootstrap$Bootstrap_ListGroup$li,
+								{ctor: '[]'},
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text('Elm 2'),
+									_1: {ctor: '[]'}
+								}),
+							_1: {ctor: '[]'}
+						}
+					}
+				}),
+			_1: {ctor: '[]'}
+		}
+	};
+};
+var _MrMJ06$Elm_Test$Main$pageHome = function (model) {
+	return {
+		ctor: '::',
+		_0: A2(
+			_elm_lang$html$Html$h1,
+			{ctor: '[]'},
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html$text('Home'),
+				_1: {ctor: '[]'}
+			}),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_rundis$elm_bootstrap$Bootstrap_Grid$row,
+				{ctor: '[]'},
+				{
+					ctor: '::',
+					_0: A2(
+						_rundis$elm_bootstrap$Bootstrap_Grid$col,
+						{ctor: '[]'},
+						{
+							ctor: '::',
+							_0: _rundis$elm_bootstrap$Bootstrap_Card$view(
+								A3(
+									_rundis$elm_bootstrap$Bootstrap_Card$block,
+									{ctor: '[]'},
+									{
+										ctor: '::',
+										_0: A2(
+											_rundis$elm_bootstrap$Bootstrap_Card_Block$text,
+											{ctor: '[]'},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text('Click the start button.'),
+												_1: {ctor: '[]'}
+											}),
+										_1: {
+											ctor: '::',
+											_0: _rundis$elm_bootstrap$Bootstrap_Card_Block$custom(
+												A2(
+													_rundis$elm_bootstrap$Bootstrap_Button$linkButton,
+													{
+														ctor: '::',
+														_0: _rundis$elm_bootstrap$Bootstrap_Button$primary,
+														_1: {
+															ctor: '::',
+															_0: _rundis$elm_bootstrap$Bootstrap_Button$attrs(
+																{
+																	ctor: '::',
+																	_0: _elm_lang$html$Html_Attributes$href('#buttonPage'),
+																	_1: {ctor: '[]'}
+																}),
+															_1: {ctor: '[]'}
+														}
+													},
+													{
+														ctor: '::',
+														_0: _elm_lang$html$Html$text('Start'),
+														_1: {ctor: '[]'}
+													})),
+											_1: {ctor: '[]'}
+										}
+									},
+									A3(
+										_rundis$elm_bootstrap$Bootstrap_Card$headerH4,
+										{ctor: '[]'},
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html$text('Button example'),
+											_1: {ctor: '[]'}
+										},
+										_rundis$elm_bootstrap$Bootstrap_Card$config(
+											{
+												ctor: '::',
+												_0: _rundis$elm_bootstrap$Bootstrap_Card$outlinePrimary,
+												_1: {ctor: '[]'}
+											})))),
+							_1: {ctor: '[]'}
+						}),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_rundis$elm_bootstrap$Bootstrap_Grid$col,
+							{ctor: '[]'},
+							{
+								ctor: '::',
+								_0: _rundis$elm_bootstrap$Bootstrap_Card$view(
+									A3(
+										_rundis$elm_bootstrap$Bootstrap_Card$block,
+										{ctor: '[]'},
+										{
+											ctor: '::',
+											_0: A2(
+												_rundis$elm_bootstrap$Bootstrap_Card_Block$text,
+												{ctor: '[]'},
+												{
+													ctor: '::',
+													_0: _elm_lang$html$Html$text('A list example'),
+													_1: {ctor: '[]'}
+												}),
+											_1: {
+												ctor: '::',
+												_0: _rundis$elm_bootstrap$Bootstrap_Card_Block$custom(
+													A2(
+														_rundis$elm_bootstrap$Bootstrap_Button$linkButton,
+														{
+															ctor: '::',
+															_0: _rundis$elm_bootstrap$Bootstrap_Button$primary,
+															_1: {
+																ctor: '::',
+																_0: _rundis$elm_bootstrap$Bootstrap_Button$attrs(
+																	{
+																		ctor: '::',
+																		_0: _elm_lang$html$Html_Attributes$href('#list'),
+																		_1: {ctor: '[]'}
+																	}),
+																_1: {ctor: '[]'}
+															}
+														},
+														{
+															ctor: '::',
+															_0: _elm_lang$html$Html$text('List'),
+															_1: {ctor: '[]'}
+														})),
+												_1: {ctor: '[]'}
+											}
+										},
+										A3(
+											_rundis$elm_bootstrap$Bootstrap_Card$headerH4,
+											{ctor: '[]'},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text('List'),
+												_1: {ctor: '[]'}
+											},
+											_rundis$elm_bootstrap$Bootstrap_Card$config(
+												{
+													ctor: '::',
+													_0: _rundis$elm_bootstrap$Bootstrap_Card$outlineDanger,
+													_1: {ctor: '[]'}
+												})))),
+								_1: {ctor: '[]'}
+							}),
+						_1: {ctor: '[]'}
+					}
+				}),
+			_1: {ctor: '[]'}
+		}
+	};
+};
+var _MrMJ06$Elm_Test$Main$Model = F3(
+	function (a, b, c) {
+		return {page: a, navState: b, modalVisibility: c};
+	});
+var _MrMJ06$Elm_Test$Main$NotFound = {ctor: 'NotFound'};
+var _MrMJ06$Elm_Test$Main$List = {ctor: 'List'};
+var _MrMJ06$Elm_Test$Main$Button = {ctor: 'Button'};
+var _MrMJ06$Elm_Test$Main$Home = {ctor: 'Home'};
+var _MrMJ06$Elm_Test$Main$routeParser = _evancz$url_parser$UrlParser$oneOf(
+	{
+		ctor: '::',
+		_0: A2(_evancz$url_parser$UrlParser$map, _MrMJ06$Elm_Test$Main$Home, _evancz$url_parser$UrlParser$top),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_evancz$url_parser$UrlParser$map,
+				_MrMJ06$Elm_Test$Main$Button,
+				_evancz$url_parser$UrlParser$s('buttonPage')),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_evancz$url_parser$UrlParser$map,
+					_MrMJ06$Elm_Test$Main$List,
+					_evancz$url_parser$UrlParser$s('list')),
+				_1: {ctor: '[]'}
+			}
+		}
+	});
+var _MrMJ06$Elm_Test$Main$decode = function (location) {
+	return A2(_evancz$url_parser$UrlParser$parseHash, _MrMJ06$Elm_Test$Main$routeParser, location);
+};
+var _MrMJ06$Elm_Test$Main$urlUpdate = F2(
+	function (location, model) {
+		var _p0 = _MrMJ06$Elm_Test$Main$decode(location);
+		if (_p0.ctor === 'Nothing') {
+			return {
+				ctor: '_Tuple2',
+				_0: _elm_lang$core$Native_Utils.update(
+					model,
+					{page: _MrMJ06$Elm_Test$Main$NotFound}),
+				_1: _elm_lang$core$Platform_Cmd$none
+			};
+		} else {
+			return {
+				ctor: '_Tuple2',
+				_0: _elm_lang$core$Native_Utils.update(
+					model,
+					{page: _p0._0}),
+				_1: _elm_lang$core$Platform_Cmd$none
+			};
+		}
+	});
+var _MrMJ06$Elm_Test$Main$update = F2(
+	function (msg, model) {
+		var _p1 = msg;
+		switch (_p1.ctor) {
+			case 'UrlChange':
+				return A2(_MrMJ06$Elm_Test$Main$urlUpdate, _p1._0, model);
+			case 'NavMsg':
+				return {
+					ctor: '_Tuple2',
+					_0: _elm_lang$core$Native_Utils.update(
+						model,
+						{navState: _p1._0}),
+					_1: _elm_lang$core$Platform_Cmd$none
+				};
+			case 'CloseModal':
+				return {
+					ctor: '_Tuple2',
+					_0: _elm_lang$core$Native_Utils.update(
+						model,
+						{modalVisibility: _rundis$elm_bootstrap$Bootstrap_Modal$hidden}),
+					_1: _elm_lang$core$Platform_Cmd$none
+				};
+			default:
+				return {
+					ctor: '_Tuple2',
+					_0: _elm_lang$core$Native_Utils.update(
+						model,
+						{modalVisibility: _rundis$elm_bootstrap$Bootstrap_Modal$shown}),
+					_1: _elm_lang$core$Platform_Cmd$none
+				};
+		}
+	});
+var _MrMJ06$Elm_Test$Main$ShowModal = {ctor: 'ShowModal'};
+var _MrMJ06$Elm_Test$Main$pageGettingStarted = function (model) {
+	return {
+		ctor: '::',
+		_0: A2(
+			_elm_lang$html$Html$h2,
+			{ctor: '[]'},
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html$text('Test button'),
+				_1: {ctor: '[]'}
+			}),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_rundis$elm_bootstrap$Bootstrap_Button$button,
+				{
+					ctor: '::',
+					_0: _rundis$elm_bootstrap$Bootstrap_Button$success,
+					_1: {
+						ctor: '::',
+						_0: _rundis$elm_bootstrap$Bootstrap_Button$large,
+						_1: {
+							ctor: '::',
+							_0: _rundis$elm_bootstrap$Bootstrap_Button$block,
+							_1: {
+								ctor: '::',
+								_0: _rundis$elm_bootstrap$Bootstrap_Button$attrs(
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html_Events$onClick(_MrMJ06$Elm_Test$Main$ShowModal),
+										_1: {ctor: '[]'}
+									}),
+								_1: {ctor: '[]'}
+							}
+						}
+					}
+				},
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html$text('Click me'),
+					_1: {ctor: '[]'}
+				}),
+			_1: {ctor: '[]'}
+		}
+	};
+};
+var _MrMJ06$Elm_Test$Main$mainContent = function (model) {
+	return A2(
+		_rundis$elm_bootstrap$Bootstrap_Grid$container,
+		{ctor: '[]'},
+		function () {
+			var _p2 = model.page;
+			switch (_p2.ctor) {
+				case 'Home':
+					return _MrMJ06$Elm_Test$Main$pageHome(model);
+				case 'Button':
+					return _MrMJ06$Elm_Test$Main$pageGettingStarted(model);
+				case 'List':
+					return _MrMJ06$Elm_Test$Main$pageModules(model);
+				default:
+					return _MrMJ06$Elm_Test$Main$pageNotFound;
+			}
+		}());
+};
+var _MrMJ06$Elm_Test$Main$CloseModal = {ctor: 'CloseModal'};
+var _MrMJ06$Elm_Test$Main$modal = function (model) {
+	return A2(
+		_rundis$elm_bootstrap$Bootstrap_Modal$view,
+		model.modalVisibility,
+		A3(
+			_rundis$elm_bootstrap$Bootstrap_Modal$body,
+			{ctor: '[]'},
+			{
+				ctor: '::',
+				_0: _rundis$elm_bootstrap$Bootstrap_Form_InputGroup$view(
+					A2(
+						_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$predecessors,
+						{
+							ctor: '::',
+							_0: A2(
+								_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$span,
+								{ctor: '[]'},
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text('@'),
+									_1: {ctor: '[]'}
+								}),
+							_1: {ctor: '[]'}
+						},
+						_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$config(
+							_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$text(
+								{
+									ctor: '::',
+									_0: _rundis$elm_bootstrap$Bootstrap_Form_Input$placeholder('username'),
+									_1: {ctor: '[]'}
+								})))),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$br,
+						{ctor: '[]'},
+						{ctor: '[]'}),
+					_1: {
+						ctor: '::',
+						_0: _rundis$elm_bootstrap$Bootstrap_Form_InputGroup$view(
+							A2(
+								_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$successors,
+								{
+									ctor: '::',
+									_0: A2(
+										_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$span,
+										{ctor: '[]'},
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html$text('.00'),
+											_1: {ctor: '[]'}
+										}),
+									_1: {ctor: '[]'}
+								},
+								A2(
+									_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$predecessors,
+									{
+										ctor: '::',
+										_0: A2(
+											_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$span,
+											{ctor: '[]'},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text('$'),
+												_1: {ctor: '[]'}
+											}),
+										_1: {ctor: '[]'}
+									},
+									_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$config(
+										_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$text(
+											{
+												ctor: '::',
+												_0: _rundis$elm_bootstrap$Bootstrap_Form_Input$placeholder('amount'),
+												_1: {ctor: '[]'}
+											}))))),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$br,
+								{ctor: '[]'},
+								{ctor: '[]'}),
+							_1: {
+								ctor: '::',
+								_0: _rundis$elm_bootstrap$Bootstrap_Form_InputGroup$view(
+									A2(
+										_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$predecessors,
+										{
+											ctor: '::',
+											_0: A2(
+												_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$span,
+												{ctor: '[]'},
+												{
+													ctor: '::',
+													_0: _elm_lang$html$Html$text('$'),
+													_1: {ctor: '[]'}
+												}),
+											_1: {
+												ctor: '::',
+												_0: A2(
+													_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$span,
+													{ctor: '[]'},
+													{
+														ctor: '::',
+														_0: _elm_lang$html$Html$text('.00'),
+														_1: {ctor: '[]'}
+													}),
+												_1: {ctor: '[]'}
+											}
+										},
+										_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$config(
+											_rundis$elm_bootstrap$Bootstrap_Form_InputGroup$text(
+												{
+													ctor: '::',
+													_0: _rundis$elm_bootstrap$Bootstrap_Form_Input$placeholder('amount'),
+													_1: {ctor: '[]'}
+												})))),
+								_1: {ctor: '[]'}
+							}
+						}
+					}
+				}
+			},
+			A3(
+				_rundis$elm_bootstrap$Bootstrap_Modal$h4,
+				{ctor: '[]'},
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html$text('Test view'),
+					_1: {ctor: '[]'}
+				},
+				_rundis$elm_bootstrap$Bootstrap_Modal$small(
+					_rundis$elm_bootstrap$Bootstrap_Modal$config(_MrMJ06$Elm_Test$Main$CloseModal)))));
+};
+var _MrMJ06$Elm_Test$Main$NavMsg = function (a) {
+	return {ctor: 'NavMsg', _0: a};
+};
+var _MrMJ06$Elm_Test$Main$init = function (location) {
+	var _p3 = _rundis$elm_bootstrap$Bootstrap_Navbar$initialState(_MrMJ06$Elm_Test$Main$NavMsg);
+	var navState = _p3._0;
+	var navCmd = _p3._1;
+	var _p4 = A2(
+		_MrMJ06$Elm_Test$Main$urlUpdate,
+		location,
+		{navState: navState, page: _MrMJ06$Elm_Test$Main$Home, modalVisibility: _rundis$elm_bootstrap$Bootstrap_Modal$hidden});
+	var model = _p4._0;
+	var urlCmd = _p4._1;
+	return {
+		ctor: '_Tuple2',
+		_0: model,
+		_1: _elm_lang$core$Platform_Cmd$batch(
+			{
+				ctor: '::',
+				_0: urlCmd,
+				_1: {
+					ctor: '::',
+					_0: navCmd,
+					_1: {ctor: '[]'}
+				}
+			})
+	};
+};
+var _MrMJ06$Elm_Test$Main$subscriptions = function (model) {
+	return A2(_rundis$elm_bootstrap$Bootstrap_Navbar$subscriptions, model.navState, _MrMJ06$Elm_Test$Main$NavMsg);
+};
+var _MrMJ06$Elm_Test$Main$menu = function (model) {
+	return A2(
+		_rundis$elm_bootstrap$Bootstrap_Navbar$view,
+		model.navState,
+		A2(
+			_rundis$elm_bootstrap$Bootstrap_Navbar$items,
+			{
+				ctor: '::',
+				_0: A2(
+					_rundis$elm_bootstrap$Bootstrap_Navbar$itemLink,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$href('#buttonPage'),
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html$text('Button page'),
+						_1: {ctor: '[]'}
+					}),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_rundis$elm_bootstrap$Bootstrap_Navbar$itemLink,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$href('#list'),
+							_1: {ctor: '[]'}
+						},
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html$text('List'),
+							_1: {ctor: '[]'}
+						}),
+					_1: {ctor: '[]'}
+				}
+			},
+			A3(
+				_rundis$elm_bootstrap$Bootstrap_Navbar$brand,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$href('#'),
+					_1: {ctor: '[]'}
+				},
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html$text('Main view'),
+					_1: {ctor: '[]'}
+				},
+				_rundis$elm_bootstrap$Bootstrap_Navbar$container(
+					_rundis$elm_bootstrap$Bootstrap_Navbar$withAnimation(
+						_rundis$elm_bootstrap$Bootstrap_Navbar$config(_MrMJ06$Elm_Test$Main$NavMsg))))));
+};
 var _MrMJ06$Elm_Test$Main$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
 		{ctor: '[]'},
 		{
 			ctor: '::',
-			_0: A2(
-				_elm_lang$html$Html$img,
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$src('/logo.svg'),
-					_1: {ctor: '[]'}
-				},
-				{ctor: '[]'}),
+			_0: _MrMJ06$Elm_Test$Main$menu(model),
 			_1: {
 				ctor: '::',
-				_0: A2(
-					_elm_lang$html$Html$h1,
-					{ctor: '[]'},
-					{
-						ctor: '::',
-						_0: _elm_lang$html$Html$text('Your Elm App is working!'),
-						_1: {ctor: '[]'}
-					}),
-				_1: {ctor: '[]'}
+				_0: _MrMJ06$Elm_Test$Main$mainContent(model),
+				_1: {
+					ctor: '::',
+					_0: _MrMJ06$Elm_Test$Main$modal(model),
+					_1: {ctor: '[]'}
+				}
 			}
 		});
 };
-var _MrMJ06$Elm_Test$Main$update = F2(
-	function (msg, model) {
-		return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
-	});
-var _MrMJ06$Elm_Test$Main$init = {
-	ctor: '_Tuple2',
-	_0: {},
-	_1: _elm_lang$core$Platform_Cmd$none
+var _MrMJ06$Elm_Test$Main$UrlChange = function (a) {
+	return {ctor: 'UrlChange', _0: a};
 };
-var _MrMJ06$Elm_Test$Main$main = _elm_lang$html$Html$program(
-	{
-		view: _MrMJ06$Elm_Test$Main$view,
-		init: _MrMJ06$Elm_Test$Main$init,
-		update: _MrMJ06$Elm_Test$Main$update,
-		subscriptions: _elm_lang$core$Basics$always(_elm_lang$core$Platform_Sub$none)
-	})();
-var _MrMJ06$Elm_Test$Main$Model = {};
-var _MrMJ06$Elm_Test$Main$NoOp = {ctor: 'NoOp'};
+var _MrMJ06$Elm_Test$Main$main = A2(
+	_elm_lang$navigation$Navigation$program,
+	_MrMJ06$Elm_Test$Main$UrlChange,
+	{view: _MrMJ06$Elm_Test$Main$view, update: _MrMJ06$Elm_Test$Main$update, subscriptions: _MrMJ06$Elm_Test$Main$subscriptions, init: _MrMJ06$Elm_Test$Main$init})();
+var _MrMJ06$Elm_Test$Main$PasswordAgain = function (a) {
+	return {ctor: 'PasswordAgain', _0: a};
+};
+var _MrMJ06$Elm_Test$Main$Password = function (a) {
+	return {ctor: 'Password', _0: a};
+};
+var _MrMJ06$Elm_Test$Main$Name = function (a) {
+	return {ctor: 'Name', _0: a};
+};
